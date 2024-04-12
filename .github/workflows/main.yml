@@ -18,7 +18,7 @@ jobs:
           script: |
             git pull
             cd lms/lms/backoffice/backend/user
-            latest_tag=$(sudo docker images your_image_name --format "{{.Tag}}" | head -n 1)
+            latest_tag=$(sudo docker images user --format "{{.Tag}}" | head -n 1)
             echo $latest_tag
             majorversion=$(echo $latest_tag | cut -d "." -f 1)
             minorversion=$(echo $latest_tag | cut -d "." -f 2)
