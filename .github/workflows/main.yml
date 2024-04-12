@@ -18,6 +18,7 @@ jobs:
           username: ${{ secrets.SSH_USERNAME }}
           password: ${{ secrets.SSH_PASSWORD }}
           script: |
+            cd lms
             git pull
             cd lms/lms/backoffice/backend/user
             latest_tag=$(sudo docker images user --format "{{.Tag}}" | head -n 1)
