@@ -6,7 +6,7 @@ on:
 
 jobs:
   build:
-    runs-on: [ubuntu-latest,windows_lates]
+    runs-on: [ubuntu-latest,windows_latest]
 
     steps:
       - name: Checkout bo-user branch
