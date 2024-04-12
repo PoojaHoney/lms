@@ -2,53 +2,13 @@ name: Build and Deploy BO User
 
 on:
   push:
-    branches: [ "bo-user" ]
+    branches: [ "main" ]
 
 jobs:
   build:
     runs-on: windows-latest
 
     steps:
-      - name: Checkout bo-user branch
-        uses: actions/checkout@v2
-        with:
-          ref: bo-users
-      
-      - name: Checkout main branch
-        uses: actions/checkout@v2
-        with:
-          ref: main
-
-      - name: Merge bo-user into main
-        run: git merge --no-ff --no-edit bo-users
-
-      - name: Change directory to Dockerfile location
-        run: cd lms/backoffice/backend/user
-
-      - name: Get latest Docker image tag
-        run: |
-          latest_tag=$(docker images your_image_name --format "{{.Tag}}" | head -n 1)
-          echo $latest_tag
-          majorversion=$(echo $latest_tag | cut -d "." -f 1)
-          minorversion=$(echo $latest_tag | cut -d "." -f 2)
-          patch=$(echo $latest_tag | cut -d "." -f 3)
-          tag=$((patch+1))
-          newtag="$majorversion.$minorversion.$tag"
-          echo $newtag
-          imagename="user:$newtag"
-          echo $imagename
-          
-      - name: Docker Build
-        run: docker build -t $imagename .
-
-      - name: Login to GCP Artifact Registry
-        run: gcloud auth configure-docker asia-south1-docker.pkg.dev
-
-      - name: Docker Push to Artifact Registry
-        run: |
-          docker tag $imagename asia-south1-docker.pkg.dev/peaceful-harbor-416116/lms/$imagename
-          docker push asia-south1-docker.pkg.dev/peaceful-harbor-416116/lms/$imagename
-
       - name: SSH into GCP Compute Engine
         uses: appleboy/ssh-action@master
         with:
@@ -56,5 +16,17 @@ jobs:
           username: ${{ secrets.SSH_USERNAME }}
           password: ${{ secrets.SSH_PASSWORD }}
           script: |
-            docker pull gcr.io/your_project_id/your_image_name
-            docker run -d --name bo-user -p 4002:4002 asia-south1-docker.pkg.dev/peaceful-harbor-416116/lms/$imagename
+            git pull
+            cd lms/lms/backoffice/backend/user
+            latest_tag=$(sudo docker images your_image_name --format "{{.Tag}}" | head -n 1)
+            echo $latest_tag
+            majorversion=$(echo $latest_tag | cut -d "." -f 1)
+            minorversion=$(echo $latest_tag | cut -d "." -f 2)
+            patch=$(echo $latest_tag | cut -d "." -f 3)
+            tag=$((patch+1))
+            newtag="$majorversion.$minorversion.$tag"
+            echo $newtag
+            imagename="user:$newtag"
+            echo $imagename
+            sudo docker build -t $imagename .
+            sudo docker run -d --name bo-user -p 4002:4002 asia-south1-docker.pkg.dev/peaceful-harbor-416116/lms/$imagename
