@@ -25,24 +25,37 @@ jobs:
 
       - name: Change directory to Dockerfile location
         run: cd lms/backoffice/backend/user
-      
+
+      - name: Get latest Docker image tag
+        run: |
+          latest_tag=$(docker images your_image_name --format "{{.Tag}}" | head -n 1)
+          echo $latest_tag
+          majorversion==$(echo $latest_tag | cut -d "." -f 1)
+          minorversion==$(echo $latest_tag | cut -d "." -f 2)
+          patch=$(echo $latest_tag | cut -d "." -f 3)
+          tag=$((temp+1))
+          newtag="$majorversion.$minorversion.$patch"
+          echo $newtag
+          imagename="user;$newtag"
+          echo $imagename
+          
       - name: Docker Build
-        run: docker build -t your_image_name .
+        run: docker build -t $imagename .
 
       - name: Login to GCP Artifact Registry
         run: gcloud auth configure-docker asia-south1-docker.pkg.dev
 
       - name: Docker Push to Artifact Registry
         run: |
-          docker tag your_image_name gcr.io/your_project_id/your_image_name
-          docker push gcr.io/your_project_id/your_image_name
+          docker tag imagenamed asia-south1-docker.pkg.dev/peaceful-harbor-416116/lms/$imagename
+          docker push asia-south1-docker.pkg.dev/peaceful-harbor-416116/lms/$imagename
 
       - name: SSH into GCP Compute Engine
-        uses: appleboy/ssh-action@master
+        uses: deploy1/ssh-action@master
         with:
           host: ${{ secrets.SSH_HOST }}
           username: ${{ secrets.SSH_USERNAME }}
           password: ${{ secrets.SSH_PASSWORD }}
           script: |
             docker pull gcr.io/your_project_id/your_image_name
-            docker run -d --name your_container_name -p 80:80 gcr.io/your_project_id/your_image_name
+            docker run -d --name bo-user -p 4002:4002 asia-south1-docker.pkg.dev/peaceful-harbor-416116/lms/$imagename
