@@ -15,7 +15,7 @@ jobs:
         uses: appleboy/ssh-action@master
         with:
           host: ${{ secrets.SERVER_IP }}
-          password: ${{ secrets.SERVER_PASSWORD }}
+          key: ${{ secrets.SERVER_KEY }}
           username: ${{ secrets.SSH_USERNAME }}
           script: |
             echo "admin123" | sudo -S sleep 1 && sudo su
