@@ -18,6 +18,7 @@ jobs:
           username: ${{ secrets.SSH_USERNAME }}
           key: ${{ secrets.SERVER_KEY  }}
           script: |
+            echo "admin123" | sudo -S sleep 1 && sudo su
             cd lms
             git pull
             cd lms/lms/backoffice/backend/user
