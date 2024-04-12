@@ -6,7 +6,7 @@ on:
 
 jobs:
   build:
-    runs-on: [ubuntu-latest,windows_latest]
+    runs-on: ubuntu-latest
 
     steps:
       - name: Checkout bo-user branch
@@ -29,13 +29,13 @@ jobs:
         run: |
           latest_tag=$(docker images your_image_name --format "{{.Tag}}" | head -n 1)
           echo $latest_tag
-          majorversion==$(echo $latest_tag | cut -d "." -f 1)
-          minorversion==$(echo $latest_tag | cut -d "." -f 2)
+          majorversion=$(echo $latest_tag | cut -d "." -f 1)
+          minorversion=$(echo $latest_tag | cut -d "." -f 2)
           patch=$(echo $latest_tag | cut -d "." -f 3)
-          tag=$((temp+1))
-          newtag="$majorversion.$minorversion.$patch"
+          tag=$((patch+1))
+          newtag="$majorversion.$minorversion.$tag"
           echo $newtag
-          imagename="user;$newtag"
+          imagename="user:$newtag"
           echo $imagename
           
       - name: Docker Build
@@ -46,7 +46,7 @@ jobs:
 
       - name: Docker Push to Artifact Registry
         run: |
-          docker tag imagenamed asia-south1-docker.pkg.dev/peaceful-harbor-416116/lms/$imagename
+          docker tag $imagename asia-south1-docker.pkg.dev/peaceful-harbor-416116/lms/$imagename
           docker push asia-south1-docker.pkg.dev/peaceful-harbor-416116/lms/$imagename
 
       - name: SSH into GCP Compute Engine
