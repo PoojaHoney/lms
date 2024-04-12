@@ -32,4 +32,4 @@ jobs:
             imagename="user:$newtag"
             echo $imagename
             sudo docker build -t $imagename .
-            sudo docker run -d --name bo-user -p 4002:4002 asia-south1-docker.pkg.dev/peaceful-harbor-416116/lms/$imagename
+            sudo docker run -d --name bo-user -p 4002:4002 $imagename
