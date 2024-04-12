@@ -1,0 +1,21 @@
+.courses-menubar .ant-menu-submenu-title .ant-menu-submenu-arrow {
+  left: 1rem;
+}
+.courses_menu_titleBar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 0.625rem;
+}
+.course_sideBar_menu_container {
+  max-height: 30.0rem;
+  overflow-y: auto;
+}
+.course_sideBar_spinner {
+  display: flex;
+  height: 50vh;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}

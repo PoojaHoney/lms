@@ -1,0 +1,98 @@
+  /* [class^="ant-row"] [class^="ant-row"] {
+    width: 75%;
+    margin:0;
+  } */
+  
+  .main-container {
+    width: 100%;
+    margin: 0px;
+  }
+  
+  .upload-button-container-padding {
+    padding: 16px;
+  }
+  
+  
+  .upload-button{
+      width: 62px;
+      height: 62px;
+      border: none;
+  }
+  .upload-button-container-padding  .ant-upload-list-item {
+      display: none !important;
+  }
+  
+  .upload-file-container{
+    /* display: flex;
+    overflow: hidden;
+    flex-wrap: wrap;
+    align-items: center;
+    background: white; */
+    display: flex;
+    overflow: hidden;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    background: white;
+    flex-direction: column;
+  }
+  
+  .file_container {
+    /* position: relative;
+    margin: 7px;
+    margin-right: 7px;
+    background-color: #0290f9;
+    width: 70px;
+    height: 65px;
+    padding-top: 7px;
+    text-align: center;
+    font-size: 8px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-content: center;
+    align-items: center;
+    color:black; */
+
+    position: relative;
+    margin: 7px;
+    margin-right: 7px;
+    background-color: #cee4f5;
+    width: 100%;
+    height: 65px;
+    padding-top: 7px;
+    text-align: center;
+    font-size: 16px;
+    display: flex;
+    /* flex-direction: column; */
+    flex-wrap: nowrap;
+    /* justify-content: space-around; */
+    align-content: center;
+    align-items: center;
+    color: black;
+    gap: 10px;
+
+  }
+  .upload-file-container .anticon {
+   display: block;
+  }
+  .file_container .cross-postion {
+    position: absolute;
+    top: -6px;
+    /* left: 63px; */
+    right: 7px;
+    width:1em;
+    height: 1em;
+  }
+  
+  .file-spinner {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+  .upload-button {
+    color: #0290f9 !important;
+  }
+  .upload-button .ant-btn-icon svg {
+    background-color: #ffffff;
+  }

@@ -1,0 +1,140 @@
+.HomePage-Main {
+    width: 100vw;
+    height: 100vh;
+}
+
+.HomePage-Layout {
+    display: flex;
+    flex: 1;
+    background: #f3f2f7;
+}
+
+.HomePage-sider {
+    /* background: #e7ebef !important; */
+    /* background: white !important; */
+    border-radius: 12px;
+    margin-bottom: 30px;
+    background: #f6f7f9;
+    position: relative;
+    left: 1vh;
+    top: 1vh;
+    box-shadow: 0px 3px 5px #56535361;
+}
+
+.HomePage-sider .Sider-Avatar {
+    height: 80vh;
+}
+
+.HomePage-sider ul {
+    background: transparent;
+    /* margin-top: 50%; */
+}
+
+.HomePage-sider ul li {
+    color: rgb(0, 0, 0) !important;
+}
+
+.HomePage-sider ul .ant-menu-item-selected {
+    color: rgb(255, 255, 255) !important;
+    border-radius: 5vh !important;
+}
+
+.HomePage-sider ul .ant-menu-item {
+    border-radius: 5vh !important;
+}
+
+.HomePage-sider .ant-layout-sider-trigger {
+    background: black;
+}
+
+.HomePage-sider .title {
+    padding: 10px;
+}
+
+.HomePage-sider .title .ant-typography {
+
+    font-weight: bold;
+    position: relative;
+    margin-top: 2%;
+    margin-left: 12%;
+    font-size: 80%;
+}
+
+.onCollapse_logout .ant-typography {
+    display: none;
+    left: 1vh !important;
+}
+
+.siderbtn {
+    position: relative;
+    left: 3vh;
+}
+
+.onCollapse_siderbtn {
+    position: relative;
+    /* left: 1vh; */
+}
+
+.onCollapse_logoutrow {
+    color: #8c8c8c;
+    position: relative;
+    left: 1vh;
+}
+
+.onCollapse_logoutrow:hover {
+    background: transparent !important;
+}
+
+.LogoutRow:hover {
+    background: transparent !important;
+}
+
+.HomePage_rightView {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    margin-left: 1rem;
+}
+
+.content-toolbar {
+    width: -webkit-fill-available;
+    box-shadow: -1px 1px 5px #18181870;
+    height: 5vh;
+    border-radius: 10px;
+    margin-top: 1%;
+    background: white;
+}
+
+.content-toolbar .Toolbar-Icons {
+    margin-top: 5px;
+}
+
+.Toolbar-search {
+    width: 50vh;
+    margin-top: 6px;
+}
+
+.Toolbar-search span {
+    border: none;
+}
+
+.Toolbar-Admin {
+
+    margin-top: -1%;
+    margin-left: 15px;
+}
+
+.Toolbar-Admin .Admin {
+
+    font-size: 90%;
+    font-weight: bold;
+}
+
+.LogoutRow {
+
+    color: #8c8c8c;
+    position: relative;
+    /* top: 15vh; */
+    left: 5vh;
+    /* text-align: center; */
+}

@@ -1,0 +1,62 @@
+package main
+
+
+var courseCatalogue = []map[string]interface{}{
+	{"fieldname": "name", "label": "Name", "datatype": "str", "visible": true},
+	{"fieldname": "chaptersCount", "label": "Chapters Count", "datatype": "int", "visible": false},
+	{"fieldname": "courseCode", "label": "Course Code", "datatype": "str", "visible": true},
+	{"fieldname": "contentType", "label": "Content Type", "datatype": "str", "visible": true},
+	{"fieldname": "description", "label": "Description", "datatype": "str", "visible": true},
+	{"fieldname": "department", "label": "Department", "datatype": "str", "visible": true},
+	{"fieldname": "batch", "label": "Batch", "datatype": "str", "visible": true},
+	{"fieldname": "semester", "label": "Semester", "datatype": "str", "visible": true},
+	{"fieldname": "professorId", "label": "Professor ID", "datatype": "str", "visible": true},
+	{"fieldname": "level", "label": "Level", "datatype": "str", "visible": true},
+	{"fieldname": "duration", "label": "Duration", "datatype": "int", "visible": true},
+	{"fieldname": "prerequisites", "label": "Prerequisites", "datatype": "str", "visible": true},
+	{"fieldname": "tags", "label": "Tags", "datatype": "str", "visible": true},
+	{"fieldname": "coverImage", "label": "Cover Image", "datatype": "str", "visible": true},
+	{"fieldname": "language", "label": "Language", "datatype": "str", "visible": true},
+	{"fieldname": "certification", "label": "Certification", "datatype": "bool", "visible": true},
+	{"fieldname": "startDate", "label": "Start Date", "datatype": "time.Time", "visible": true},
+	{"fieldname": "endDate", "label": "End Date", "datatype": "time.Time", "visible": true},
+	{"fieldname": "createdBy", "label": "Created By", "datatype": "str", "visible": false},
+	{"fieldname": "version", "label": "Version", "datatype": "str", "visible": true},
+	{"fieldname": "createdAt", "label": "Created At", "datatype": "time.Time", "visible": false},
+	{"fieldname": "updatedAt", "label": "Updated At", "datatype": "time.Time", "visible": false},
+	{"fieldname": "status", "label": "Status", "datatype": "str", "visible": true},
+}
+
+var chapterCatalogue = []map[string]interface{}{
+    {"fieldname": "name", "label": "Name", "datatype": "str", "visible": true},
+    {"fieldname": "courseId", "label": "Course ID", "datatype": "str", "visible": false},
+    {"fieldname": "contentType", "label": "Content Type", "datatype": "str", "visible": false},
+	{"fieldname": "description", "label": "Description", "datatype": "str", "visible": true},
+    {"fieldname": "duration", "label": "Duration", "datatype": "int", "visible": true},
+    {"fieldname": "order", "label": "Order", "datatype": "int", "visible": true},
+    {"fieldname": "attachments", "label": "Attachments", "datatype": "obj", "visible": true},
+    {"fieldname": "quiz", "label": "Quiz", "datatype": "obj", "visible": true},
+    {"fieldname": "prerequisites", "label": "Prerequisites", "datatype": "str", "visible": true},
+    {"fieldname": "externalLinks", "label": "External Links", "datatype": "[]str", "visible": true},
+    {"fieldname": "createdBy", "label": "Created By", "datatype": "str", "visible": false},
+    {"fieldname": "createdAt", "label": "Created At", "datatype": "time.Time", "visible": false},
+    {"fieldname": "updatedAt", "label": "Updated At", "datatype": "time.Time", "visible": false},
+    {"fieldname": "status", "label": "Status", "datatype": "str", "visible": true},
+}
+
+var lessonCatalogue = []map[string]interface{}{
+    {"fieldname": "name", "label": "Name", "datatype": "str", "visible": true},
+    {"fieldname": "chapterId", "label": "Chapter ID", "datatype": "str", "visible": false},
+    {"fieldname": "contentType", "label": "Content Type", "datatype": "str", "visible": false},
+	{"fieldname": "description", "label": "Description", "datatype": "str", "visible": true},
+    {"fieldname": "content", "label": "Content", "datatype": "str", "visible": true},
+    {"fieldname": "order", "label": "Order", "datatype": "int", "visible": true},
+    {"fieldname": "attachments", "label": "Attachments", "datatype": "obj", "visible": true},
+    {"fieldname": "quiz", "label": "Quiz", "datatype": "obj", "visible": true},
+    {"fieldname": "prerequisites", "label": "Prerequisites", "datatype": "str", "visible": true},
+    {"fieldname": "externalLinks", "label": "External Links", "datatype": "[]str", "visible": true},
+    {"fieldname": "createdBy", "label": "Created By", "datatype": "str", "visible": false},
+    {"fieldname": "createdAt", "label": "Created At", "datatype": "time.Time", "visible": false},
+    {"fieldname": "updatedAt", "label": "Updated At", "datatype": "time.Time", "visible": false},
+    {"fieldname": "status", "label": "Status", "datatype": "str", "visible": true},
+}

@@ -1,0 +1,319 @@
+.calendar_content_search {
+  max-height: 300px;
+  background-color: var(--background-color-primary);
+  border: 1px solid #dedede;
+  overflow-y: auto;
+  padding: 5px 10px;
+  border-radius: 5px;
+  position: absolute;
+  z-index: 9999;
+  top: 105.0px;
+  cursor: pointer;
+  width: 470px;
+}
+
+.calendar_content_search_label {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+/* .calendar_content_search_label :hover {
+  background: #9fa4eb74;
+} */
+.calender_content_suggest li {
+  border-bottom: 1px solid #dedede;
+  padding: 5px 0;
+  display: block;
+}
+
+.calendar_event_container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: inherit;
+}
+
+.calendar_event_content {
+  overflow: hidden;
+  width: fit-content;
+  margin-bottom: 0.5em;
+}
+
+.ant-picker-range {
+  background: var(--background-color-form-input);
+  border: none;
+}
+
+.ant-input-search .ant-input-group .ant-input-affix-wrapper:not(:last-child) {
+  background: var(--background-color-grey-dark);
+  border: 1px solid var(--background-color-form-input);
+}
+
+.ant-input-group>.ant-input-affix-wrapper:not(:last-child) .ant-input {
+  border: none;
+
+}
+
+.ant-picker .ant-picker-input>input {
+  border: none !important;
+}
+
+.calendar_modal_fields {
+  width: 100%
+}
+
+.calendar_event_modal .ant-modal-content .ant-btn-primary {
+  background-color: transparent;
+}
+
+.uploadButton {
+  background-color: var(--background-color-grey-light) !important;
+  color: var(--color-sites-dropdown) !important;
+  border-radius: 4px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 0;
+  border: none;
+}
+
+.uploadButton span {
+  color: var(--color-sites-dropdown) !important;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px !important;
+  line-height: 20px !important;
+}
+
+.uploadButton svg {
+  color: var(--color-sites-dropdown) !important;
+  width: 1rem;
+  height: 1rem;
+}
+
+
+.calendar-dropdown-container .ant-picker-small {
+  width: 175px;
+  background-color: var(--background-color-primary);
+  color: var(--font-color-primary);
+  border: none;
+  padding: 0 0.7rem;
+  border-radius: 4px;
+}
+
+.calendar-dropdown-container .ant-picker .ant-picker-input>input::placeholder {
+  color: var(--font-color-primary);
+  font-size: 0.8rem;
+}
+
+.calendar_event_modal .ant-btn.ant-btn-primary {
+  background-color: var(--color-primary);
+}
+
+.calendar_event_modal .ant-btn.ant-btn-primary.ant-input-search-button {
+  background-color: transparent;
+}
+
+.today {
+  background-color: var(--background-color-active) !important;
+}
+
+.epg-event-before {
+  opacity: 0.4 !important;
+}
+
+.scheduler-container {
+  color: var(--font-color-primary);
+  margin: 0 1.5rem;
+  position: relative;
+  width: 68vw;
+  height: 30rem;
+  overflow: scroll;
+}
+
+.scheduler-header {
+  position: sticky;
+  top: 0;
+  z-index: 25;
+  width: 611.3rem;
+  background-color: var(--background-color-secondary);
+}
+
+.time-container {
+  width: 100%;
+  margin-left: auto;
+  display: flex;
+  background-color: var(--background-color-primary);
+  height: 42px;
+}
+
+.calendar-dropdown-container {
+  width: 180px;
+  position: sticky;
+  left: 0;
+  background-color: var(--background-color-secondary);
+  display: flex;
+  align-items: center;
+}
+
+.epg_divider {
+  width: 2px;
+  background-color: var(--background-color-primary);
+  height: 100%;
+  margin: 0 0.5rem;
+}
+
+.left-scroll-button div,
+.right-scroll-button div {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.time-item {
+  width: 200px;
+  text-align: left;
+  display: flex;
+  align-items: center;
+  height: 100%;
+  font-size: 0.8rem;
+  font-weight: 600;
+  padding-left: 0.5rem;
+  border-left: 2px solid var(--background-color-secondary);
+}
+
+.time-items-container {
+  display: flex;
+}
+
+.time-items-container .time-item:nth-child(1) {
+  border-left: 4px solid var(--background-color-primary) !important;
+}
+
+.scheduled-data-container {
+  width: 611.3rem;
+}
+
+.scheduled-data-item {
+  display: flex;
+  height: 3rem;
+  align-items: center;
+}
+
+.scheduled-date-container {
+  width: 180px;
+  position: sticky;
+  left: 0;
+  z-index: 15;
+  background-color: var(--background-color-secondary);
+  height: 100%;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+
+.scheduled-date {
+  background-color: var(--background-color-primary);
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  gap: 0.5rem;
+  height: 85%;
+  width: 216px;
+  padding: 0 0.4rem;
+  font-size: 0.8rem;
+  font-weight: 600;
+  border-radius: 4px;
+  width: 175px;
+}
+
+.scheduled-day {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.2rem;
+  width: 1.8rem;
+  background-color: var(--background-color-grey-dark);
+  border-radius: 4px;
+  color: var(--font-color-secondary);
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.scheduled-programs-container {
+  position: relative;
+  flex: 1;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.schedule-cell {
+  width: 200px;
+  height: 100%;
+}
+
+.schedule-cell {
+  border-left: 1px dashed var(--background-color-primary);
+  border-bottom: 1px dashed var(--background-color-primary);
+}
+
+.schedule-cell:last-child {
+  border-right: 1px dashed var(--background-color-primary);
+}
+
+.scheduled-event-item {
+  cursor: pointer;
+  position: absolute;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0.7;
+  font-size: 0.8rem;
+  font-weight: 600;
+  z-index: 10;
+  transition: all 0.3s;
+  overflow: hidden;
+}
+
+.scheduled-event-item:hover {
+  opacity: 1;
+}
+
+.event-container {
+  background-color: var(--background-color-grey-dark);
+  width: 100%;
+  height: 85%;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  border-radius: 4px;
+  padding: 0 0.3rem;
+}
+
+.event-poster-image {
+  width: 30px;
+  height: 30px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.event-text {
+  height: 80%;
+  display: flex;
+  overflow: hidden;
+  align-items: center;
+}
+
+.event-start-end {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  font-size: 0.7rem;
+  opacity: 0.6;
+}

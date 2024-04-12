@@ -1,0 +1,149 @@
+.Dashboard-Title {
+    display: flex;
+    flex-direction: column;
+    width: -webkit-fill-available;
+}
+.Dashboard-Track{
+    
+    width: -webkit-fill-available;
+    
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+.Dashboard-Track .Dashboard-Track_div{
+    height: 20vh;
+    margin-left: 10px;
+    margin-top: 5px;
+    border-radius: 15px;
+    width: 35vh;
+    background: white;
+    box-shadow: 0px 0px 10px -3px black;
+}
+.Dashboard-Track .Dashboard-Track_div:before
+{
+    content: '';
+    position: absolute;
+    top: 0;
+    /* Left: 0; */
+    width: 35vh;
+    height: 99vh;
+    background: #0290f9;
+    clip-path: circle(76px at 103% 32%);
+}
+.Dashboard-Icon{
+    margin-top: 4vh;
+    margin-left: 2vh;
+}
+.Dashboard-Heading .ant-typography{
+    font-size: 3vh;
+    margin-left: 3vh;
+    margin-top: 1vh;
+}
+.Dashboard-Description{
+    margin-left: 3vh;
+}
+.Dashboard-Value .ant-typography{
+    font-size: 2vh;
+    font-weight: bold;
+    color: #fe9817;
+}
+.Dashboard-Percentage .ant-typography{
+    background: #d8d8d8;
+    padding: 2px;
+    border-radius: 5px;
+    font-weight: bold;
+    color: black;
+}
+.Dashboard-Percentage{
+    margin-top: 1px;
+    margin-left: 10px;
+}
+.Dashboard-GraphReprsentation{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width: -webkit-fill-available;
+    height: 50vh;
+    margin-top: 10px;
+    margin-left: 11px;
+}
+.Dashboard-GraphReprsentation .Dashboard-Graph{
+    background: white;
+    border-radius: 10px;
+    
+    box-shadow: 0px 2px 2px 1px silver;
+}
+.Dashboard-Graph-Head{
+    padding: 1vh;
+}
+.Dashboard-Graph-Head .ant-typography{
+    font-size: 3vh;
+}
+.Dashboard-Graph-Head .ant-btn{
+    margin-top: 2vh;
+}
+.Dashboard-Graph-Progress .ant-progress-inner{
+    width: 220px !important;
+    height: 220px !important;
+}
+.Dashboard-Graph-Progress .ant-progress-inner .ant-progress-text{
+   font-weight: bold;
+}
+.Dashboard-Graph-ProgressInfo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: nowrap;
+    align-content: space-between;
+    align-items: center;
+}
+.Dashboard-GraphReprsentation .Dashboard-Statistics{
+    background: white;
+    border-radius: 10px;
+    margin-left: 5px;
+    
+    box-shadow: 0px 2px 2px 1px silver;
+    padding: 10px;
+}
+.Dashboard-Statistics canvas{
+    height: 350px !important;
+}
+.Dashboard-Statistics .ant-typography{
+    font-size: 3vh;
+}
+.Dashboard-TotalAnalysis{
+    
+    display: flex;
+    height: 60vh;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width: -webkit-fill-available;
+    margin-left: 1vh;
+    margin-top: 1vh;
+}
+.Dashboard-TotalAnalysis-div{
+    
+    background: white;
+    border-radius: 10px;
+    margin-right: 10px;
+    box-shadow: 0px 2px 2px 1px silver;
+    padding: 10px;
+}
+.Dashboard-TotalAnalysis-div .TotalAnalysis-Heading{
+    
+   
+    display: flex;
+    flex-direction: column;
+}
+.Dashboard-TotalAnalysis-div .TotalAnalysis-Heading .TotalAnalysis-Title{
+    font-size: 3vh;
+}
+.Dashboard-TotalAnalysis-div .TotalAnalysis-Heading .TotalAnalysis-SubTitle{
+    margin-top: -15px;
+    margin-left: 3px;
+}
+.Dashboard-TotalAnalysis-List
+{
+    width: -webkit-fill-available;
+}

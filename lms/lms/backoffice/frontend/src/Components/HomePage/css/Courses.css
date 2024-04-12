@@ -1,0 +1,114 @@
+.demo-logo-vertical {
+
+    font-size: 2vh;
+    text-align: center;
+    color: white;
+}
+
+
+
+.List-tree {
+    padding: 15px;
+    background: whitesmoke;
+}
+
+.List-tree .ant-tree-treenode {
+
+    width: -webkit-fill-available;
+    background: #e3e3e3;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    height: 5vh;
+}
+
+
+
+
+.Course-Tree {
+    /* margin-left: 1%; */
+    background: #F5F7F9;
+    height: 80vh;
+    /* border-radius: 12px; */
+    /* box-shadow: 0px 0px 2px 0px black; */
+    margin-top: 1%;
+    padding: 3px;
+}
+
+.ant-tree-switcher path {
+    color: #1677ff
+}
+
+.Modal-Course {
+    width: 80vh !important;
+}
+
+
+.Courses-bar {
+    height: 7vh;
+    padding: 12px;
+}
+
+.Courses-bar .ant-typography {
+    font-size: 2vh;
+}
+
+
+.Courses-Cards .Card {
+    width: 260px;
+    height: 250px;
+    background: #f6f7f9;
+    margin-left: 3%;
+    margin-top: 5%;
+}
+
+.Courses-Cards .Card .ant-avatar-group {
+    margin-left: 7vh;
+}
+
+.Card-Title .ant-typography {
+
+    font-size: 2vh;
+
+    margin-bottom: -3%;
+    width: -webkit-fill-available;
+
+}
+
+.Card-Title .ant-typography-secondary {
+
+    font-size: 1vh;
+
+}
+
+.Card-Buttons .ant-btn {
+
+    width: 8vh;
+    border-radius: 0;
+}
+
+.Card-Buttons .ant-btn span {
+
+    font-size: 11px;
+    font-weight: bold;
+}
+
+
+.Course-Tree .ant-tree-title {
+
+    font-family: sans-serif;
+    color: #8c8c8c;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

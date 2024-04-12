@@ -1,0 +1,237 @@
+.Login_div {
+    position: absolute;
+    height: 87vh;
+    width: -webkit-fill-available;
+    top: 10vh;
+    left: 109vh;
+    border-radius: 51px;
+}
+
+.login-form {
+
+    width: 60%;
+    position: absolute;
+    top: 20%;
+    left: 20%;
+}
+
+.Form_div {
+
+    left: 2%;
+    top: 15%;
+    width: 50vh;
+    /* height: 45vh; */
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.Form_div .Form-title {
+
+    font-size: 5vh;
+    text-align: center;
+    
+    color: rgb(97 94 94 / 88%);
+}
+
+.Form_div .Form-Username,
+.Form_div .Form-Password {
+
+    font-size: 19px;
+    font-weight: bold;
+}
+
+.Form_div label::before {}
+
+.Form_div .Form-Password {
+    margin-bottom: 1px;
+}
+
+.login-form-forgot {
+    margin-left: 30%;
+}
+
+.login-form-button {
+    width: -webkit-fill-available;
+    ;
+}
+
+.Login-Layout {
+    /* background: linear-gradient(341deg, black, #000000d4); */
+    /* height: 100vh; */
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.Cnt_Head {
+    height: 26vh;
+    width: 4vh;
+    position: absolute;
+    left: 5%;
+    top: 29%;
+}
+
+.Welcome {
+    font-size: 12vh;
+    position: absolute;
+    left: 14vh;
+    top: 23vh;
+}
+
+.To {
+    font-size: 5vh;
+    position: absolute;
+    left: 33vh;
+    top: 40vh;
+}
+
+.LMS {
+    font-size: 5vh;
+    position: absolute;
+    left: 14vh;
+    top: 49vh;
+}
+
+.Header-bar {
+    height: 5vh;
+    width: -webkit-fill-available;
+}
+
+.Header-bar .ant-menu {
+    width: -webkit-fill-available;
+    background: transparent;
+    border-bottom: none !important;
+}
+
+.Header-bar li {
+
+    font-size: 16px;
+    font-weight: bold;
+}
+
+
+.Login-LDIV {
+    height: 80vh;
+    width: -webkit-fill-available;
+}
+
+/* Light theme */
+#Light .Header-bar {
+
+    background: white;
+}
+
+#Light .Header-bar li:hover {
+    color: green !important;
+}
+
+#Light .Header-bar li {
+    color: black !important;
+}
+
+#Light .LMS {
+    color: rgb(0, 0, 0);
+}
+
+#Light .To {
+    color: rgb(0, 0, 0);
+}
+
+#Light .Welcome {
+    color: rgb(0, 0, 0);
+}
+
+#Light .Cnt_Head {
+    background: rgb(0, 0, 0);
+}
+
+#Light .login-form-forgot {
+    color: #160d31 !important;
+}
+
+#Light .Form_div label::before {
+    color: #000 !important;
+}
+
+#Light .Form_div {
+
+    color: #000;
+    /* box-shadow: 0 5px 15px rgb(0 0 0 / 53%); */
+}
+
+#Light .Login_div {
+    background: linear-gradient(145deg, #ffffff, #cacaca);
+}
+
+#Light .Login-Page {
+    background: "#f7fafe";
+    height: 100vh ;
+}
+
+/* Darkmode */
+#Dark .Header-bar {
+
+    background: black;
+}
+
+#Dark .Login-Page {
+    background: black;
+}
+
+#Dark .Header-bar li:hover {
+    color: green !important;
+}
+
+#Dark .Header-bar li {
+    color: rgb(255, 255, 255) !important;
+}
+
+#Dark .LMS {
+    color: rgb(255, 255, 255);
+}
+
+#Dark .To {
+    color: white;
+}
+
+#Dark .Welcome {
+    color: white;
+}
+
+#Dark .Cnt_Head {
+    background: white;
+}
+
+#Dark .login-form-forgot {
+    color: #ffffff !important;
+}
+
+#Dark .Form_div label::before {
+    color: #ffffff !important;
+}
+
+#Dark .Form_div {
+
+    color: #ffffff;
+    box-shadow: 0 5px 15px rgba(255, 255, 255, 0.53);
+}
+
+#Dark .Login_div {
+    background: linear-gradient(145deg, #272727, #cacaca);
+}
+.Login-div{
+    height: 70vh;
+    width: -webkit-fill-available;
+    background: white;
+    position: absolute;
+    top: 12%;
+    left: 2%;
+    margin: 20px;
+}
+.Login-logo{
+    background-size: cover;
+}
+.Main-Layout{
+    background: "#f3f4f6"
+}

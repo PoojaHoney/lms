@@ -1,0 +1,140 @@
+
+.Users-List .SelectType {
+    position: relative;
+    /* left: 40%; */
+    top: 2vh;
+}
+
+.Users-List .Title .ant-typography {
+    font-size: 3vh;
+}
+
+.Users-MenuList {
+    background: white;
+}
+
+.Users-MenuList .ant-list-item-action svg {
+    color: #1677ff;
+}
+
+.User-ListItem {
+    padding: 5px !important;
+}
+
+.UserDisplay {
+
+    /* min-width: 100vh; */
+    width: 100vh;
+    height: -webkit-fill-available;
+    background: #f6f7f9;
+    position: relative;
+    left: 8%;
+    top: 5%;
+    padding: 10px;
+    border-radius: 15px;
+    box-shadow: -6px 7px 9px 0px #0000003d;
+}
+.UserDisplay-Layout{
+    margin-bottom: 10vh;
+}
+.UserDisplay-Layout .Title{
+    width: -webkit-fill-available;
+}
+.UserDisplay .ant-typography {
+
+    text-transform: capitalize;
+}
+
+.Users{
+    width: -webkit-fill-available;
+}
+.UserClasses-VideoInfo {
+
+    display: flex;
+    flex-direction: row;
+    align-content: stretch;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 5px;
+}
+
+.UserClasses-VideoInfo .UserClasses-Info .Title {
+
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.UserClasses-Info {
+    padding: 3px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+
+.UserClasses-Info .UserClasses-AvatarGroups {
+    margin-top: 6vh;
+}
+
+.UserClasses-Info .UserClases-ChapterInfo .ant-btn {
+    /* width: 9vh; */
+
+    font-size: 12px;
+    margin-left: -11px;
+    margin-right: -10px;
+}
+
+.UserClases-ChapterInfo {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+.UserClases-ChapterInfo .anticon {
+    color: #878889 !important
+}
+
+.UserClases-ChapterInfo .ant-typography {
+
+    margin-right: 9px;
+    color: black;
+
+    font-size: 12px;
+
+}
+.UserDetails-Card .title {
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+.UserDetails-Card .title .Value {
+
+
+    font-weight: bold;
+    color: black;
+    font-family: sans-serif;
+}
+.Display-Bar {
+    width: -webkit-fill-available;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0px 1px 4px 0px black;
+    padding: 5px;
+}
+.Display-Form .ant-col {
+    padding-bottom: 10px;
+}
+.Modal-User{
+    width: 50rem !important;
+}
+.User-add-ImgUpload{
+    width: -webkit-fill-available;
+    height: 10vh;
+
+}
+.Modal-Bluk-User{
+    width: 80rem !important;
+    height: 38rem !important;
+}
