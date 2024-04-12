@@ -50,7 +50,7 @@ jobs:
           docker push asia-south1-docker.pkg.dev/peaceful-harbor-416116/lms/$imagename
 
       - name: SSH into GCP Compute Engine
-        uses: lms/ssh-action@master
+        uses: actions/ssh-action@master
         with:
           host: ${{ secrets.SSH_HOST }}
           username: ${{ secrets.SSH_USERNAME }}
